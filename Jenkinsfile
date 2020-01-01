@@ -3,11 +3,6 @@ pipeline {
 	
     stages {
         stage('Build') {
-		
-			when{
-				changeset glob: "*helloworld.js", caseSensitive: true
-			}
-		
             steps {                
                 echo 'Hello World changeset JS'
             }
